@@ -1,4 +1,4 @@
-# <img src="http://www.purescript.org/img/logo.svg" width="26" > Purescript Cheat Sheet
+# <img src="https://rawgithub.com/purescript/logo/master/favicon/purescript-favicon-black.svg" width="48"> Purescript Cheat Sheet
 
 ## Table of Contents
 
