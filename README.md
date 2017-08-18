@@ -13,7 +13,7 @@ A quick reference sheet for PureScript syntax and features
 | `$>`            | `voidLeft`              | `Data.Functor`               | A version of `voidRight` with its arguments flipped.        
 | `<@>`           | `flap`                  | `Data.Functor`               | Apply a value in a computational context to a value in no context. Generalizes `flip`. (Flips the order of the arguments to a function of two arguments)        
 | `<*>`           | `apply`                 | `Control.Apply`              | `apply` is used to apply a function to an argument under a type constructor.        
-| `<*`            | `applyFirst`            | `Control.Apply`              | Combine two effectful actions, keeping only the result of the second.        
+| `<*`            | `applyFirst`            | `Control.Apply`              | Combine two effectful actions, keeping only the result of the first.        
 | `*>`            | `applySecond`           | `Control.Apply`              | Combine two effectful actions, keeping only the result of the second.        
 | `$`             | `apply`                 | `Data.Function`              | Applies an argument to a function, allowing parentheses to be ommitted in some cases.        
 | `#`             | `applyFlipped`          | `Data.Function`              | `applyFlipped` is `apply` with its arguments reversed.        
