@@ -25,8 +25,8 @@ A quick reference sheet for PureScript syntax and features
 | `<=<`           | `composeKleisliFlipped` | `Control.Bind`               | Backwards Kleisli composition, or `composeKleisli` with its arguments flipped.        
 | `~>`            | `NaturalTransformation` | `Data.NaturalTransformation` | A natural transformation is a mapping between type constructors of kind `* -> *` where the mapping operation has no ability to manipulate the inner values.         
 | `<>`            | `append`                | `Data.Semigroup`             | Concatenate two Semigroup values. (Example: String concatenation)       
-| `&&`            | `conj`                  | `Data.HeytingAlgebra`        | Boolean OR                   
-| `\|\|`          | `disj`                  | `Data.HeytingAlgebra`        | Boolean AND                  
+| `&&`            | `conj`                  | `Data.HeytingAlgebra`        | Boolean AND                   
+| `\|\|`          | `disj`                  | `Data.HeytingAlgebra`        | Boolean OR                  
 | `==`            | `eq`                    | `Data.Eq`                    | Equality check               
 | `/=`            | `notEq`                 | `Data.Eq`                    | Inequality check             
 | `<`             | `lessThan`              | `Data.Ord`                   | Less than                    
