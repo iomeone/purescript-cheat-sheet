@@ -36,6 +36,5 @@ An a quick cheat sheet reference for PureScript syntax and features
 | `==`            | `eq`                    | `Data.Eq`                    |         |
 | `/=`            | `notEq`                 | `Data.Eq`                    |         |
 | `&&`            | `conj`                  | `Data.HeytingAlgebra`        |         |
-| `||`            | `disj`                  | `Data.HeytingAlgebra`        |         |
-
+| `\|\|`          | `disj`                  | `Data.HeytingAlgebra`        |         |
 
