@@ -25,16 +25,16 @@ An a quick cheat sheet reference for PureScript syntax and features
 | `<=<`           | `composeKleisliFlipped` | `Control.Bind`               |         |
 | `~>`            | `NaturalTransformation` | `Data.NaturalTransformation` |         |
 | `<>`            | `append`                | `Data.Semigroup`             |         |
-| `+`             | `add`                   | `Data.Semiring`              |         |
-| `*`             | `mul`                   | `Data.Semiring`              |         |
-| `-`             | `sub`                   | `Data.Ring`                  |         |
+| `&&`            | `conj`                  | `Data.HeytingAlgebra`        |         |
+| `\|\|`          | `disj`                  | `Data.HeytingAlgebra`        |         |
+| `==`            | `eq`                    | `Data.Eq`                    |         |
+| `/=`            | `notEq`                 | `Data.Eq`                    |         |
 | `<`             | `lessThan`              | `Data.Ord`                   |         |
 | `<=`            | `lessThanOrEq`          | `Data.Ord`                   |         |
 | `>`             | `greaterThan`           | `Data.Ord`                   |         |
 | `>=`            | `greaterThanOrEq`       | `Data.Ord`                   |         |
+| `+`             | `add`                   | `Data.Semiring`              |         |
+| `*`             | `mul`                   | `Data.Semiring`              |         |
+| `-`             | `sub`                   | `Data.Ring`                  |         |
 | `/`             | `div`                   | `Control.EuclideanRing`      |         |
-| `==`            | `eq`                    | `Data.Eq`                    |         |
-| `/=`            | `notEq`                 | `Data.Eq`                    |         |
-| `&&`            | `conj`                  | `Data.HeytingAlgebra`        |         |
-| `\|\|`          | `disj`                  | `Data.HeytingAlgebra`        |         |
 
