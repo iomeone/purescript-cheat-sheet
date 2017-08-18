@@ -24,7 +24,7 @@ An a quick cheat sheet reference for PureScript syntax and features
 | `>=>`           | `composeKleisli`        | `Control.Bind`               | Forwards Kleisli composition. Used for composing monadic functions of type `(a -> m b)` and `(b -> m c)`.        
 | `<=<`           | `composeKleisliFlipped` | `Control.Bind`               | Backwards Kleisli composition, or `composeKleisli` with its arguments flipped.        
 | `~>`            | `NaturalTransformation` | `Data.NaturalTransformation` | A natural transformation is a mapping between type constructors of kind `* -> *` where the mapping operation has no ability to manipulate the inner values.         
-| `<>`            | `append`                | `Data.Semigroup`             | String concatenation         
+| `<>`            | `append`                | `Data.Semigroup`             | Concatenate two Semigroup values.        
 | `&&`            | `conj`                  | `Data.HeytingAlgebra`        | Boolean OR                   
 | `\|\|`          | `disj`                  | `Data.HeytingAlgebra`        | Boolean AND                  
 | `==`            | `eq`                    | `Data.Eq`                    | Equality check               
