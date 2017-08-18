@@ -15,6 +15,16 @@ An a quick cheat sheet reference for PureScript syntax and features
 | `<*>`           | `apply`                 | `Control.Apply`              |         |
 | `<*`            | `applyFirst`            | `Control.Apply`              |         |
 | `*>`            | `applySecond`           | `Control.Apply`              |         |
+| `$`             | `apply`                 | `Data.Function`              |         |
+| `#`             | `applyFlipped`          | `Data.Function`              |         |
+| `<<<`           | `compose`               | `Control.Semigroupoid`       |         |
+| `>>>`           | `composeFlipped`        | `Control.Semigroupoid`       |         |
+| `>>=`           | `bind`                  | `Control.Bind`               |         |
+| `=<<`           | `bindFlipped`           | `Control.Bind`               |         |
+| `>=>`           | `composeKleisli`        | `Control.Bind`               |         |
+| `<=<`           | `composeKleisliFlipped` | `Control.Bind`               |         |
+| `~>`            | `NaturalTransformation` | `Data.NaturalTransformation` |         |
+| `<>`            | `append`                | `Data.Semigroup`             |         |
 | `+`             | `add`                   | `Data.Semiring`              |         |
 | `*`             | `mul`                   | `Data.Semiring`              |         |
 | `-`             | `sub`                   | `Data.Ring`                  |         |
@@ -22,19 +32,10 @@ An a quick cheat sheet reference for PureScript syntax and features
 | `<=`            | `lessThanOrEq`          | `Data.Ord`                   |         |
 | `>`             | `greaterThan`           | `Data.Ord`                   |         |
 | `>=`            | `greaterThanOrEq`       | `Data.Ord`                   |         |
-| `$`             | `apply`                 | `Data.Function`              |         |
-| `#`             | `applyFlipped`          | `Data.Function`              |         |
-| `>>=`           | `bind`                  | `Control.Bind`               |         |
-| `=<<`           | `bindFlipped`           | `Control.Bind`               |         |
-| `>=>`           | `composeKleisli`        | `Control.Bind`               |         |
-| `<=<`           | `composeKleisliFlipped` | `Control.Bind`               |         |
 | `/`             | `div`                   | `Control.EuclideanRing`      |         |
 | `==`            | `eq`                    | `Data.Eq`                    |         |
 | `/=`            | `notEq`                 | `Data.Eq`                    |         |
-| `<<<`           | `compose`               | `Control.Semigroupoid`       |         |
-| `>>>`           | `composeFlipped`        | `Control.Semigroupoid`       |         |
-| `~>`            | `NaturalTransformation` | `Data.NaturalTransformation` |         |
 | `&&`            | `conj`                  | `Data.HeytingAlgebra`        |         |
 | `||`            | `disj`                  | `Data.HeytingAlgebra`        |         |
-| `<>`            | `append`                | `Data.Semigroup`             |         |
+
 
