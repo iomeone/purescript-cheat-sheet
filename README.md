@@ -15,8 +15,8 @@ A quick reference sheet for PureScript syntax and features
 | `<*>`           | `apply`                 | `Control.Apply`              | `apply` is used to apply a function to an argument under a type constructor.        
 | `<*`            | `applyFirst`            | `Control.Apply`              | Combine two effectful actions, keeping only the result of the first.        
 | `*>`            | `applySecond`           | `Control.Apply`              | Combine two effectful actions, keeping only the result of the second.        
-| `$`             | `apply`                 | `Data.Function`              | Applies an argument to a function, allowing parentheses to be ommitted in some cases. Like `<|` in some other FP languages.        
-| `#`             | `applyFlipped`          | `Data.Function`              | `applyFlipped` is `apply` with its arguments reversed. Like `|>` in some other FP languages.       
+| `$`             | `apply`                 | `Data.Function`              | Applies an argument to a function, allowing parentheses to be ommitted in some cases. (Like `<\|` in Elm, F#, etc.)       
+| `#`             | `applyFlipped`          | `Data.Function`              | `applyFlipped` is `apply` with its arguments reversed. (Like `\|>` in Elm, F#, etc.)    
 | `<<<`           | `compose`               | `Control.Semigroupoid`       | Backwards composition. Used for composing pure functions.        
 | `>>>`           | `composeFlipped`        | `Control.Semigroupoid`       | Forwards composition, or `compose` with its arguments reversed.      
 | `>>=`           | `bind`                  | `Control.Bind`               | `bind` composes computations in sequence, using the return value of one computation to determine the next computation.        
