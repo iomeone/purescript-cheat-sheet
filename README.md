@@ -8,7 +8,8 @@
 3. [Operators](#operators)
     * [Prelude Infix Operators](#prelude-infix-operators)
 3. [Modules](#modules)
-    * [Imports](#imports)
+    * [Defining Modules](#defining-modules)
+    * [Importing Modules](#importing-modules)
 
 ## Hello World
 
@@ -72,6 +73,9 @@ Multi-line comment
 
 
 ## Modules
+
+### Defining Modules
+
 ```purescript
 -- Defining a module that exports everything
 module Mymodule where
@@ -91,7 +95,7 @@ type Error
   | NotFound String
 ```
 
-#### Imports
+#### Importing Modules
 ```purescript
 -- qualified imports
 
