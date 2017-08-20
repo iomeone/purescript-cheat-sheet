@@ -46,6 +46,7 @@ From zero to hero:
 4. `pulp init`
 5. `pulp run`
 6. In the terminal you should see `Hello sailor!`
+
 ### Simple Logging Example
 
 ```purescript
@@ -66,8 +67,12 @@ main = do
 module Main where
 
 import Prelude
-import Text.Smolder (html, lang, h1, text)
 
+import Text.Smolder.HTML (html, h1)
+import Text.Smolder.HTML.Attributes (lang)
+import Text.Smolder.Markup (Markup, text, (!))
+
+main :: forall e. Markup e
 main = html ! lang "en" $ do
   h1 $ text "Hello, world!"
 ```
