@@ -5,6 +5,7 @@
 1. [Language Summary](#language-summary)
 2. [Benefits](#benefits)
 3. [Hello World](#hello-world)
+    * [Simple Logging Example](#simple-logging-example)
     * [Example Using Smolder](#example-using-smolder)
 4. [Comments](#comments)
 5. [Operators](#operators)
@@ -36,16 +37,31 @@
 
 ## Hello World
 
+### Simple Logging Example
+
+```purescript
+module Main where
+
+import Prelude
+import Control.Monad.Eff (Eff)
+import Control.Monad.Eff.Console (CONSOLE, log)
+
+main :: forall e. Eff (console :: CONSOLE | e) Unit
+main = do
+  log "Hello, world!"
+```
+
 ### Example Using Smolder
 
-File `HelloWorld.purs`:
 ```purescript
+module Main where
+
 import Prelude
 import Text.Smolder (html, lang, h1, text)
 
 -- Hello world example
 main = html ! lang "en" $ do
-  h1 $ text "Hello World!"
+  h1 $ text "Hello, world!"
 ```
 
 ## Comments
