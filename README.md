@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Hello World](#hello-world)
-    * Example Using Smolder (#example-using-smolder)
+    * [Example Using Smolder](#example-using-smolder)
 2. [Comments](#comments)
 3. [Operators](#operators)
     * [Prelude Infix Operators](#prelude-infix-operators)
