@@ -1,9 +1,34 @@
-# purescript-cheat-sheet
-A quick reference sheet for PureScript syntax and features
+# <img src="https://rawgithub.com/purescript/logo/master/favicon/purescript-favicon-black.svg" width="48"> Purescript Cheat Sheet
+
+## Table of Contents
+
+1. [Hello World](#hello-world)
+2. [Comments](#comments)
+3. [Operators](#operators)
+3. [Modules](#modules)
+    * [Imports](#imports)
+
+## Hello World
+File `HelloWorld.purs`:
+```purescript
+import Prelude
+import Text.Smolder (html, lang, h1, text)
+
+-- Hello world example
+main = html ! lang "en" $ do
+  h1 $ text "Hello World!"
+```
+
+## Comments
+```purescript
+-- Single line comment
+
+{-
+Multi-line comment
+-}
+```
 
 ## Operators
-
-### Prelude Infix Operators
 
 | Symbol          | Function                | Defined in                   | Meaning                      
 |-----------------|-------------------------|------------------------------|------------------------------
@@ -38,3 +63,30 @@ A quick reference sheet for PureScript syntax and features
 | `-`             | `sub`                   | `Data.Ring`                  | Subtraction          
 | `/`             | `div`                   | `Control.EuclideanRing`      | Division             
 
+
+## Modules
+```purescript
+-- Defining a module that exports everything
+module Mymodule where
+
+-- Export only specified entities
+module Mymodule (Type, value) where
+
+-- Export all or specific states of type
+module Mymodule 
+  ( Error(Forbidden, Timeout)
+  , Stuff(..)
+  ) where
+
+type Error
+  = Forbidden String
+  | Timeout String
+  | NotFound String
+```
+
+#### Imports
+```purescript
+-- qualified imports
+
+-- unqualified imports
+```
