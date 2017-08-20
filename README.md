@@ -68,13 +68,19 @@ module Main where
 
 import Prelude
 
+import Control.Monad.Eff (Eff)
+import Control.Monad.Eff.Console (CONSOLE, log)
 import Text.Smolder.HTML (html, h1)
 import Text.Smolder.HTML.Attributes (lang)
 import Text.Smolder.Markup (Markup, text, (!))
+import Text.Smolder.Renderer.String (render)
 
-main :: forall e. Markup e
-main = html ! lang "en" $ do
+doc :: forall e. Markup e
+doc = html ! lang "en" $ do
   h1 $ text "Hello, world!"
+
+main :: forall eff. Eff (console :: CONSOLE | eff ) Unit
+main = log $ render doc
 ```
 
 ## Comments
