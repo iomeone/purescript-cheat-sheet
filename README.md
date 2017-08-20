@@ -5,7 +5,7 @@
 1. [Hello World](#hello-world)
 2. [Comments](#comments)
 3. [Operators](#operators)
-    - [Prelude Infix Operators](#prelude-infix-operators)
+    * [Prelude Infix Operators](#prelude-infix-operators)
 3. [Modules](#modules)
     * [Imports](#imports)
 
