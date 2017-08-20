@@ -130,9 +130,9 @@ Multi-line comment
 | `/`             | `div`                   | `Control.EuclideanRing`      | Division
 
 
-## Defining Modules
+## Modules
 
-#### Exports
+#### Defining Modules
 ```purescript
 -- Defining a module that exports everything
 module MyModule where
