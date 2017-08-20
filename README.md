@@ -2,14 +2,37 @@
 
 ## Table of Contents
 
-1. [Hello World](#hello-world)
+1. [Language Summary](#language-summary)
+2. [Benefits](#benefits)
+3. [Hello World](#hello-world)
     * [Example Using Smolder](#example-using-smolder)
-2. [Comments](#comments)
-3. [Operators](#operators)
+4. [Comments](#comments)
+5. [Operators](#operators)
     * [Prelude Infix Operators](#prelude-infix-operators)
-3. [Modules](#modules)
+6. [Modules](#modules)
     * [Defining Modules](#defining-modules)
     * [Importing Modules](#importing-modules)
+
+## Language Summary
+
+ * A strongly-typed functional programming language that compiles to JavaScript
+ * Features Hindley-Milner type annotations & top-level type inference
+ * Compiles to easy to read, easy to understand JavaScript code
+ * Very similar to Haskell in many ways, but strictly evaluated
+ * Similar to Elm, but offers more advanced type features, like type classes, and can be used for both UI & server-side programming
+
+## Benefits
+
+* Compile to readable JavaScript and reuse existing JavaScript code easily
+* An extensive collection of libraries for development of web applications, web servers, apps and more
+* Excellent tooling and editor support with instant rebuilds
+* An active community with many learning resources
+* Build real-world applications using functional techniques and expressive types, such as:
+    * Algebraic data types and pattern matching
+    * Row polymorphism and extensible records
+    * Higher kinded types
+    * Type classes with functional dependencies
+    * Higher-rank polymorphism
 
 ## Hello World
 
