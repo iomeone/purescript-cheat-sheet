@@ -59,7 +59,6 @@ module Main where
 import Prelude
 import Text.Smolder (html, lang, h1, text)
 
--- Hello world example
 main = html ! lang "en" $ do
   h1 $ text "Hello, world!"
 ```
