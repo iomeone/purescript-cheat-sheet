@@ -5,6 +5,7 @@
 1. [Hello World](#hello-world)
 2. [Comments](#comments)
 3. [Operators](#operators)
+    - [Prelude Infix Operators](#prelude-infix-operators)
 3. [Modules](#modules)
     * [Imports](#imports)
 
@@ -29,6 +30,8 @@ Multi-line comment
 ```
 
 ## Operators
+
+### Prelude Infix Operators
 
 | Symbol          | Function                | Defined in                   | Meaning                      
 |-----------------|-------------------------|------------------------------|------------------------------
