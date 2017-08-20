@@ -118,7 +118,7 @@ type Error
   | NotFound String
 ```
 
-#### Importing Modules
+### Importing Modules
 ```purescript
 -- qualified imports
 
