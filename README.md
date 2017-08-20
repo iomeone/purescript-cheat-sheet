@@ -5,6 +5,7 @@
 1. [Language Summary](#language-summary)
 2. [Benefits](#benefits)
 3. [Hello World](#hello-world)
+    * [Getting Started](#getting-started)
     * [Example Using Smolder](#example-using-smolder)
 4. [Comments](#comments)
 5. [Operators](#operators)
@@ -35,6 +36,15 @@
     * Higher-rank polymorphism
 
 ## Hello World
+
+### Getting Started
+From zero to hero:
+1. `npm i -g purescript pulp bower`
+2. `mkdir hello-purescript`
+3. `cd hello-purescript`
+4. `pulp init`
+5. `pulp run`
+6. In the terminal you should see `Hello sailor!`
 
 ### Example Using Smolder
 
