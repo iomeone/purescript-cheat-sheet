@@ -132,8 +132,7 @@ class Something a where
   show :: a -> String
 ```
 
-<<<<<<< HEAD
-#### Imports
+#### Importing Modules
 
 ##### Qualified Imports
 ```purescript
@@ -159,9 +158,6 @@ array = 1 A.: 2 A.: 3 A.: []
 ```
 
 ##### Unqualified imports
-=======
-#### Importing Modules
->>>>>>> master
 ```purescript
 import Data.List ((:))
 -- For Data.List, : is in scope
