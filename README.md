@@ -5,6 +5,7 @@
 1. [Language Summary](#language-summary)
 2. [Benefits](#benefits)
 3. [Hello World](#hello-world)
+    * [Getting Started](#getting-started)
     * [Simple Logging Example](#simple-logging-example)
     * [Example Using Smolder](#example-using-smolder)
 4. [Comments](#comments)
@@ -37,6 +38,15 @@
 
 ## Hello World
 
+### Getting Started
+From zero to hero:
+1. `npm i -g purescript pulp bower`
+2. `mkdir hello-purescript`
+3. `cd hello-purescript`
+4. `pulp init`
+5. `pulp run`
+6. In the terminal you should see `Hello sailor!`
+
 ### Simple Logging Example
 
 ```purescript
@@ -57,10 +67,20 @@ main = do
 module Main where
 
 import Prelude
-import Text.Smolder (html, lang, h1, text)
 
-main = html ! lang "en" $ do
+import Control.Monad.Eff (Eff)
+import Control.Monad.Eff.Console (CONSOLE, log)
+import Text.Smolder.HTML (html, h1)
+import Text.Smolder.HTML.Attributes (lang)
+import Text.Smolder.Markup (Markup, text, (!))
+import Text.Smolder.Renderer.String (render)
+
+doc :: forall e. Markup e
+doc = html ! lang "en" $ do
   h1 $ text "Hello, world!"
+
+main :: forall eff. Eff (console :: CONSOLE | eff ) Unit
+main = log $ render doc
 ```
 
 ## Comments
