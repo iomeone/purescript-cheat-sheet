@@ -93,7 +93,7 @@ import Prelude
 import Data.Maybe (Maybe(Just, Nothing))
 
 helloWorld :: Maybe String -> String
-helloWorld Nothing = "Hello, World!"
+helloWorld Nothing = "Hello, world!"
 helloWorld (Just x) = "Hello, " <> x <> "!"
 ```
 
