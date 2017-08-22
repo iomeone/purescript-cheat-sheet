@@ -8,6 +8,7 @@
     * [Getting Started](#getting-started)
     * [Simple Logging Example](#simple-logging-example)
     * [Example Using Smolder](#example-using-smolder)
+    * [Simple Module Example](#simple-module-example)
 4. [Comments](#comments)
 5. [Operators](#operators)
     * [Prelude Infix Operators](#prelude-infix-operators)
@@ -81,6 +82,19 @@ doc = html ! lang "en" $ do
 
 main :: forall eff. Eff (console :: CONSOLE | eff ) Unit
 main = log $ render doc
+```
+
+### Simple Module Example
+
+```purescript
+module HelloWorld where
+
+import Prelude
+import Data.Maybe (Maybe(Just, Nothing))
+
+helloWorld :: Maybe String -> String
+helloWorld Nothing = "Hello, World!"
+helloWorld (Just x) = "Hello, " <> x <> "!"
 ```
 
 ## Comments
