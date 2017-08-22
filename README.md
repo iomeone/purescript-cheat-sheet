@@ -22,7 +22,7 @@
  * Features Hindley-Milner type annotations & top-level type inference
  * Compiles to easy to read, easy to understand JavaScript code
  * Very similar to Haskell in many ways, but strictly evaluated
- * Similar to Elm, but offers more advanced type features, like type classes, and can be used for both UI & server-side programming
+ * Similar to Elm, but offers more advanced type features, like type classes & higher-kinded polymorphism, and can be used for both UI & server-side programming
 
 ## Benefits
 
