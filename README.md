@@ -18,7 +18,7 @@
 
 ## Language Summary
 
- * A strongly-typed functional programming language that compiles to JavaScript
+ * A strongly-typed, pure functional programming language that compiles to JavaScript
  * Features Hindley-Milner type annotations & top-level type inference
  * Compiles to easy to read, easy to understand JavaScript code
  * Very similar to Haskell in many ways, but strictly evaluated
