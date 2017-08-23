@@ -123,6 +123,18 @@ bool true x _ = x
 bool false _ x = x
 ```
 
+Note that, unlike Haskell, every line which should be considered documentation must start with a pipe. This allows you to do things like:
+
+``` purescript
+-- | Sort an array based on its `Ord` instance.
+-- |
+-- | This implementation runs in `O(n^2)` time, where `n` is the length of the
+-- | input array.
+-- TODO: try to optimise this?
+sort :: forall a. (Ord a) => Array a -> Array a
+sort xs = [...]
+```
+
 ## Operators
 
 ### Prelude Infix Operators
