@@ -4,6 +4,7 @@
 
 * [Language Summary](#language-summary)
 * [Benefits](#benefits)
+* [Getting Started](#getting-started)
 * [Hello World](#hello-world)
     * [Getting Started](#getting-started)
     * [Simple Logging Example](#simple-logging-example)
@@ -39,16 +40,16 @@
     * Type classes with functional dependencies
     * Higher-rank polymorphism
 
-## Hello World
 
-### Getting Started
-From zero to hero:
-1. `npm i -g purescript pulp bower`
-2. `mkdir hello-purescript`
-3. `cd hello-purescript`
-4. `pulp init`
-5. `pulp run`
-6. In the terminal you should see `Hello sailor!`
+## Getting Started
+
+1. `npm i -g purescript pulp bower` to install PureScript, Pulp, & Bower
+2. `mkdir purescript-app` to create a directory for your PureScript app
+3. `cd hello-purescript` to move into the new directory
+4. `pulp init` will generate a boilerplate PureScript project for you to modify as you see fit
+5. `pulp run` will build and run the project, logging out `Hello Sailor!` in your terminal
+
+## Hello World
 
 ### Simple Logging Example
 
