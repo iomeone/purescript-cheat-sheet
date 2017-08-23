@@ -175,7 +175,7 @@ You can also define your own custom infix operators. For example, you might defi
 
 ```purescript
 import Prelude
-import Data.List (List, filter)
+import Data.List (List, (..), filter)
 
 infixl 4 filter as <$?>
 
