@@ -98,12 +98,29 @@ helloWorld (Just x) = "Hello, " <> x <> "!"
 ```
 
 ## Comments
-```purescript
--- Single line comment
 
+A single line comment starts with `--`:
+
+``` purescript
+-- This is a comment
+```
+
+Multi-line comments are enclosed in `{-` and `-}`:
+
+``` purescript
 {-
-  Multi-line comment
+  Comment
+  continued comment
 -}
+```
+
+Comments that start with a pipe character, `|`, are considered documentation, and will appear in the output of tools like `psc-docs` and Pursuit. For example:
+
+``` purescript
+-- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
+bool :: forall a. Boolean -> a -> a -> a
+bool true x _ = x
+bool false _ x = x
 ```
 
 ## Operators
