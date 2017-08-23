@@ -207,6 +207,21 @@ n :: Int
 n = (+) 3 5
 ```
 
+This can be useful because it allows partial application. You you can simply leave out the second argument to create a reusable function: 
+
+```purescript
+addThree :: Int -> Int
+addThree = (+) 3
+```
+
+However, you can also accomplish the same thing using infix operators with the `_` placeholder, like:
+
+
+```purescript
+addThree :: Int -> Int
+addThree = (3 + _)
+```
+
 Whether you're using normal function syntax or operator symbols, or infix or prefix notation, you're really just using functions in various forms. It's up to you to use them how you see fit. Use whichever form you feel makes the code you're writing most readable.
 
 
