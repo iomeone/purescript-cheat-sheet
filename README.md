@@ -161,7 +161,7 @@ ns :: List Int
 ns = 0 `range` 999
 ```
 
-However, many functions have infix operators defined for convenience. `range` has the infix operator `..`. The following is equivalent to the above example:
+However, many functions have infix operators defined for convenience. For example, `range` has the `..` operator. The following is equivalent to the above example:
 
 ```purescript
 import Prelude
