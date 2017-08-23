@@ -207,7 +207,7 @@ n :: Int
 n = (+) 3 5
 ```
 
-This can be useful because it allows partial application. You you can simply leave out the second argument to create a reusable function: 
+This can be useful because it allows partial application. You can simply leave out the second argument to create a reusable function: 
 
 ```purescript
 addThree :: Int -> Int
