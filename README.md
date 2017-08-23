@@ -11,6 +11,8 @@
     * [Simple Module Example](#simple-module-example)
 * [Comments](#comments)
 * [Operators](#operators)
+    * [Infix Notation](#infix-notation)
+    * [Prefix Notation](#prefix-notation)
     * [Prelude Infix Operators](#prelude-infix-operators)
 * [Modules](#modules)
     * [Defining Modules](#defining-modules)
@@ -137,6 +139,76 @@ sort xs = [...]
 
 ## Operators
 
+### Infix Notation
+
+Functions in PureScript can alternatively be used with infix notation by wrapping them in backticks. For example,
+
+```purescript
+import Prelude
+import Data.List (List, range)
+
+ns :: List Int
+ns = range 0 999
+```
+
+can also be written like this:
+
+```purescript
+import Prelude
+import Data.List (List, range)
+
+ns :: List Int
+ns = 0 `range` 999
+```
+
+However, many functions have infix operators defined for convenience. `range` has the infix operator `..`. The following is equivalent to the above example:
+
+```purescript
+import Prelude
+import Data.List (List, (..))
+
+ns :: List Int
+ns = 0 .. 999
+```
+
+You can also define your own custom infix operators. For example, you might define `<$?>` as a custom infix operator for `filter`:
+
+```purescript
+import Prelude
+import Data.List (List, filter)
+
+infixl 4 filter as <$?>
+
+ns :: List Int
+ns = 0 .. 999
+
+multiples :: List Int
+multiples = (\n -> mod n 3 == 0 || mod n 5 == 0) <$?> ns
+```
+
+### Prefix Notation
+
+Infix operators can alternatively be used with prefix notation by wrapping them in parenthesis. For example,
+
+```purescript
+import Prelude
+
+n :: Int
+n = 3 + 5
+```
+
+can also be written like this:
+
+```purescript
+import Prelude
+
+n :: Int
+n = (+) 3 5
+```
+
+No matter whether you're using normal function syntax or operator symbols, infix or prefix notation, etc., you're really just using functions in different ways. Use whichever form you feel makes the code you're writing most readable.
+
+
 ### Prelude Infix Operators
 
 | Symbol          | Function                | Defined in                   | Meaning
@@ -171,7 +243,6 @@ sort xs = [...]
 | `*`             | `mul`                   | `Data.Semiring`              | Multiplication
 | `-`             | `sub`                   | `Data.Ring`                  | Subtraction
 | `/`             | `div`                   | `Control.EuclideanRing`      | Division
-
 
 ## Modules
 
