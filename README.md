@@ -2,17 +2,17 @@
 
 ## Table of Contents
 
-1. [Language Summary](#language-summary)
-2. [Benefits](#benefits)
-3. [Hello World](#hello-world)
+* [Language Summary](#language-summary)
+* [Benefits](#benefits)
+* [Hello World](#hello-world)
     * [Getting Started](#getting-started)
     * [Simple Logging Example](#simple-logging-example)
     * [Example Using Smolder](#example-using-smolder)
     * [Simple Module Example](#simple-module-example)
-4. [Comments](#comments)
-5. [Operators](#operators)
+* [Comments](#comments)
+* [Operators](#operators)
     * [Prelude Infix Operators](#prelude-infix-operators)
-6. [Modules](#modules)
+* [Modules](#modules)
     * [Defining Modules](#defining-modules)
     * [Importing Modules](#importing-modules)
 
