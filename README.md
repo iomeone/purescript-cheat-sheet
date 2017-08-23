@@ -206,7 +206,7 @@ n :: Int
 n = (+) 3 5
 ```
 
-No matter whether you're using normal function syntax or operator symbols, infix or prefix notation, etc., you're really just using functions in different ways. Use whichever form you feel makes the code you're writing most readable.
+Whether you're using normal function syntax or operator symbols, or infix or prefix notation, you're really just using functions in various forms. It's up to you to use them how you see fit. Use whichever form you feel makes the code you're writing most readable.
 
 
 ### Prelude Infix Operators
