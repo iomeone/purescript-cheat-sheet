@@ -1,5 +1,11 @@
 # <img src="https://rawgithub.com/purescript/logo/master/favicon/purescript-favicon-black.svg" width="48"> Purescript Cheat Sheet
 
+## Disclaimer
+
+Some text in this document has been taken, either in part or in full, from various other documents, including PureScript's [documentation repository](https://github.com/purescript/documentation), PureScript's [official website](http://www.purescript.org/), and [Pursuit](https://pursuit.purescript.org/),
+
+This document is not meant to replace any of the above resources. It's simply meant to be a helpful doc for beginners to quickly reference PureScript syntax & features. Please, see the [LICENSE](https://github.com/joshburgess/purescript-cheat-sheet/blob/master/LICENSE) and give credit where it's due if you choose to fork, modify, etc. in any way.
+
 ## Table of Contents
 
 * [Language Summary](#language-summary)
