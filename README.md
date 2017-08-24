@@ -260,7 +260,7 @@ Whether you're using normal function syntax or operator symbols, or infix or pre
 | `-`             | `sub`                   | `Data.Ring`                  | Subtraction
 | `/`             | `div`                   | `Control.EuclideanRing`      | Division
 
-See (the Prelude docs on Pursuit)[`https://pursuit.purescript.org/packages/purescript-prelude/3.1.0/docs/Prelude`] for more details.
+See [the Prelude docs on Pursuit](`https://pursuit.purescript.org/packages/purescript-prelude/3.1.0/docs/Prelude`) for more details.
 
 ## Modules
 
