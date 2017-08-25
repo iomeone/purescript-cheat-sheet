@@ -24,6 +24,7 @@ This document is not meant to replace any of the above resources. It's simply me
 * [Modules](#modules)
     * [Defining Modules](#defining-modules)
     * [Importing Modules](#importing-modules)
+* [Links](#links)
 
 ## Language Summary
 
@@ -338,3 +339,10 @@ import Data.List ((:))
 import MyModule (someFunction, someType(..), someType(Tag, AnotherTag), class SomeClass)
 -- For MyModule, only the function, types, and class mentioned are in scope
 ```
+
+## Links
+
+- [Purescript by Example](https://leanpub.com/purescript/read)
+- [egghead.io Tutorials](https://egghead.io/search?q=purescript)
+- [Purescript Search Engine](https://pursuit.purescript.org/)
+- [Purescript Docs](https://github.com/purescript/documentation)
