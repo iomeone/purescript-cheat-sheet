@@ -342,9 +342,10 @@ import MyModule (someFunction, someType(..), someType(Tag, AnotherTag), class So
 
 ## Links
 
-- [Purescript's Official Documentation](https://github.com/purescript/documentation)
+- [Official Documentation](https://github.com/purescript/documentation)
+- [Official Website](http://www.purescript.org/)
 - [Pursuit (Purescript Search Engine)](https://pursuit.purescript.org/)
-- [Purescript by Example](https://leanpub.com/purescript/read)
+- [`Purescript by Example` Book](https://leanpub.com/purescript/read)
 - [egghead.io Tutorial Videos](https://egghead.io/search?q=purescript)
 
 
