@@ -316,7 +316,7 @@ import Prelude
 import Prelude hiding (div)
 -- For Prelude, all imports are in scope except div
 
-import Data.List (Nil)
+import Data.List (List(Nil))
 -- For Data.List, Nil type is in scope
 
 import Data.Array as A
